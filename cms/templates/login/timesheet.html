@@ -5,7 +5,7 @@
 {% block body %}
 <div class="container-fluid songs-container">
 	<div class="alert alert-warning">
-        Detailed Attendance Records <label class="label label-danger label-xl">{{ student.user.first_name }}</label><input type="hidden" name="subject" value={{ subject }}/></div>
+        Detailed Attendance Records <label class="label label-danger label-xl">{{ student.user.first_name }}</label><input type="hidden" name="subject" value={{ subject }}/><button class="print-button print-button2" style="margin-left:10px;" onclick="window.print()">PRINT</button></div>
     </div>
              {% for sub in student.selected.all %}
                  <div class="panel panel-info">
